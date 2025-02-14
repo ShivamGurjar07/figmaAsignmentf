@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Camera, List, LayoutDashboard, Menu, X } from 'lucide-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/logo.png';
-import './sidebar.css';
+import '../components/sidebar.css';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);

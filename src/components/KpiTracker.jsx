@@ -69,25 +69,25 @@ const KPITracker = () => {
             icon={FileText}
             title="Units Processed"
             value="2,575"
-            bgColor="bg-primary rounded-circle"
+            bgColor="bg-primary rounded-circle border border-1 border-dark"
           />
           <KPI
             icon={CheckCircle}
             title="Units Passed"
             value="814"
-            bgColor="bg-primary rounded-circle"
+            bgColor="bg-primary rounded-circle border border-1 border-dark"
           />
           <KPI
             icon={FileText}
             title="Units Rejected"
             value="12"
-            bgColor="bg-primary rounded-circle"
+            bgColor="bg-primary rounded-circle border border-1 border-dark"
           />
           <KPI
             icon={FileText}
             title="Throughput (Units/Entry)"
             value="110.41"
-            bgColor="bg-primary rounded-circle"
+            bgColor="bg-primary rounded-circle border border-1 border-dark"
           />
         </div>
       </div>

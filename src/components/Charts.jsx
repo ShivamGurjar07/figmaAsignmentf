@@ -1,13 +1,23 @@
-import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  PieChart,
+  Pie,
+  Cell,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 export const SplitChart = ({ data }) => (
-  <div style={{ width: '100%', height: 300 }}>
+  <div style={{ width: "100%", height: 300 }}>
     <h4>Units Processed Today</h4>
     <ResponsiveContainer width="100%" height="100%">
       <BarChart data={data}>
         <XAxis dataKey="name" />
         <YAxis />
-        
         <Legend />
         <Bar dataKey="passed" fill="blue" />
         <Bar dataKey="rejected" fill="green" />
@@ -17,10 +27,10 @@ export const SplitChart = ({ data }) => (
 );
 
 export const RejectionPieChart = ({ data }) => {
-  const COLORS = ['blue', 'green'];
+  const COLORS = ["blue", "green"];
 
   return (
-    <div style={{ width: '100%', height: 350 }}>
+    <div style={{ width: "100%", height: 350 }}>
       <h4>Rejection Reasons</h4>
       <ResponsiveContainer width="100%" height="90%">
         <PieChart>
@@ -29,7 +39,9 @@ export const RejectionPieChart = ({ data }) => {
             cx="50%"
             cy="50%"
             outerRadius={100}
-            label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+            label={({ name, percent }) =>
+              `${name} ${(percent * 100).toFixed(0)}%`
+            }
             dataKey="value"
           >
             {data.map((entry, index) => (

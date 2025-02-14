@@ -1,6 +1,6 @@
 export const KPI = ({ icon: Icon, title, value, bgColor = "bg-primary" }) => (
   <div className="col-md-3">
-    <div className="card border-0 shadow-sm">
+    <div className="card  border border-1 border-dark shadow-sm ">
       <div className="card-body">
         <div className="d-flex align-items-center gap-3 mb-3">
           <div className={`p-2 ${bgColor} rounded`}>

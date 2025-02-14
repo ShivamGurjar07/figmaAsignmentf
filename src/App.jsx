@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 import KPITracker from "./components/KpiTracker";
-import Sidebar from "./components/SideBar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
